@@ -20,6 +20,7 @@ Before you use the driver, you need to install some dependencies.
 ###libjpeg
 
 >sudo apt-cache search libjpeg
+
 >sudo apt-get install libjpeg
 
 
