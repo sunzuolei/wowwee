@@ -7,7 +7,7 @@ The driver is under **linux**, and I test it with **ubuntu 14.04**. Before you u
 
 # Table of Contents 
 -------------------
-- [Library Dependencies](## Library Dependencies)
+- [Library Dependencies](#Library Dependencies)
 - [Notes about the SDK](#notes-about-the-sdk)
 - [Using the SDK](#using-the-sdk)
 	- [Finding a MiP](#finding-mips)
