@@ -21,6 +21,7 @@ The driver is under **linux**, and I test it with **ubuntu 14.04**. Before you u
 - [Demo](#demo)
       - [The Obstacle Avoiding](#the-obstacle-avoiding)
       - [The camera capture an image](#the-camera-capture-an-image)
+- [How to run a demo](#how-to-run-a-demo)
 - [For more information](#for-more-information)
 
 ## Library Dependencies
