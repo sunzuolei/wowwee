@@ -96,7 +96,7 @@ First you should connect to the Rovio's network, you could use the adhoc model o
 
 >./saveImage
 
->./run_tld -p ../core/thirdpart/parameters.yml
+>./run_tld -p ../core/thirdpart/parameters.yml -tl
 
 
 ## For more information
