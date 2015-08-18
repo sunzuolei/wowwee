@@ -22,7 +22,7 @@ The driver is under **linux**, and I test it with **ubuntu 14.04**. Before you u
       - [The Obstacle Avoiding](#the-obstacle-avoiding)
       - [The camera capture an image and save it](#the-camera-capture-an-image-and-save-it)
       - [The rovio can find the biggest pink square and mark it](#the-rovio-can-find-the-biggest-pink-square-and-mark-it)
-      - [The rovio can track object that you boxed out](#The-rovio-can-track-object-that-you-boxed-out)
+      - [The rovio can track the object that you boxed out](#the-rovio-can-track-the-object-that-you-boxed-out)
 - [How to run a demo](#how-to-run-a-demo)
 - [For more information](#for-more-information)
 
