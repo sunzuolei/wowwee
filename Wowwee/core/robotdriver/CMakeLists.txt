@@ -4,6 +4,7 @@ FIND_PACKAGE(OpenCV REQUIRED)
 FIND_PACKAGE(JPEG REQUIRED)
 
 INCLUDE_DIRECTORIES(./include ${OpenCV_INCLUDE_DIRS} ${JPEG_INCLUDE_DIRS})
+INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/core/thirdpart/include)
 
 AUX_SOURCE_DIRECTORY(./src ROBOT_LIB_CPP)
 MESSAGE(STATUS ${ROBOT_LIB_CPP})
@@ -15,6 +16,14 @@ ADD_LIBRARY(robotdriver ${ROBOT_LIB_CPP})
 #MESSAGE(STATUS "LIB_CPP:" ${LIB_CPP})
 
 
-AUX_SOURCE_DIRECTORY(./test TEST_CPP)
-ADD_EXECUTABLE(testobstacleavoiding ${TEST_CPP})
-TARGET_LINK_LIBRARIES(testobstacleavoiding robotdriver ${OpenCV_LIBS} ${JPEG_LIBRARIES})
+#AUX_SOURCE_DIRECTORY(../demo DEMO_CPP)
+ADD_EXECUTABLE(findpinksquare ${CMAKE_SOURCE_DIR}/core/demo/findpinksquare.cpp)
+ADD_EXECUTABLE(saveImage ${CMAKE_SOURCE_DIR}/core/demo/saveImage.cpp)
+ADD_EXECUTABLE(run_tld ${CMAKE_SOURCE_DIR}/core/demo/run_tld.cpp)
+
+TARGET_LINK_LIBRARIES(saveImage robotdriver ${OpenCV_LIBS} ${JPEG_LIBRARIES})
+TARGET_LINK_LIBRARIES(findpinksquare robotdriver ${OpenCV_LIBS} ${JPEG_LIBRARIES})
+TARGET_LINK_LIBRARIES(run_tld robotdriver tld LKTracker ferNN tld_utils ${OpenCV_LIBS} ${JPEG_LIBRARIES})
+
+
+

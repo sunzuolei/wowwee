@@ -997,7 +997,7 @@ int RobotInterface::getImage(IplImage *image) {
  * @return  RI_RESP_SUCCESS;
  * @note save an image from the camera in the IplImage format used by OpenCV.
  */
-int RobotInterface::saveImage(IplImage *image,int image_number){
+int RobotInterface::saveImage(IplImage *image){
     // Create an image to store the image from the camera
     image = cvCreateImage(cvSize(640, 480), IPL_DEPTH_8U, 3);
     getImage(image);

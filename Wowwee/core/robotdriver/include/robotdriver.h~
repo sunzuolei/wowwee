@@ -378,7 +378,7 @@ class RobotInterface {
         /**
          * @brief Image, save an image from the camera.
          */
-        int saveImage(IplImage *image,int image_number);
+        int saveImage(IplImage *image);
         /**
          * @brief Image, takes a 1 plane image and returns a list of the squares in an image.
          */
