@@ -73,7 +73,7 @@ Before you use the driver, you need to install some dependencies.
 ### The rovio can find the biggest pink square and mark it
 >The demo you can see [http://v.youku.com/v_show/id_XMTMxMjAwNTMzMg==.html?from=y1.7-1.2&qq-pf-to=pcqq.c2c](http://v.youku.com/v_show/id_XMTMxMjAwNTMzMg==.html?from=y1.7-1.2&qq-pf-to=pcqq.c2c)
 
-### The rovio can track object that you boxed out
+### The rovio can track the object that you boxed out
 >The demo use the TLD algrithm, functional but slow, I put the TLD in thirdpart folder.
 
 ## How to run a demo
