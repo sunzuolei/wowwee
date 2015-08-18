@@ -65,8 +65,12 @@ Before you use the driver, you need to install some dependencies.
 ### The Obstacle Avoiding
 >The demo is to test the IR function. If there is obstacle in front of the Rovio, it will turn left. And it will go forward if there is no obstacle. 
 
-### The camera capture an image
-
+### The camera capture an image and save it
+>The demo is to capture image and show it in the screen, then save it in a folder that you can define in saveImage member functiion.
+### The rovio can find the biggest pink square and mark it.
+>The demo you can see [http://v.youku.com/v_show/id_XMTMxMjAwNTMzMg==.html?from=y1.7-1.2&qq-pf-to=pcqq.c2c](http://v.youku.com/v_show/id_XMTMxMjAwNTMzMg==.html?from=y1.7-1.2&qq-pf-to=pcqq.c2c)
+### The rovio can tracking object that you box out.
+>The demo use the TLD algrithm, functional but slow, I put the TLD in thirdpart folder.
 
 ## How to run a demo
 -------------------
@@ -82,15 +86,17 @@ First you should connect to the Rovio's network, you could use the adhoc model o
 
 >make
 
->cd ../testbin
+>cd ../demo
 
 >./testobstacleavoiding
-
+>./findpinksquare
+>./saveImage
+>./run_tld -p ../core/thirdpart/parameters.yml
 
 
 ## For more information
 -------------------
-- E-mail:[sunzuolei@gmail.com](sunzuolei@gmail.com)
+- E-mail:[szl@mpig.com.cn](szl@mpig.com.cn)
 
 ---------
 Thank you!
