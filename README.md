@@ -20,7 +20,9 @@ The driver is under **linux**, and I test it with **ubuntu 14.04**. Before you u
       - [sensor data](#sensor-data)
 - [Demo](#demo)
       - [The Obstacle Avoiding](#the-obstacle-avoiding)
-      - [The camera capture an image](#the-camera-capture-an-image)
+      - [The camera capture an image and save it](#the-camera-capture-an-image-and-save-it)
+      - [The rovio can find the biggest pink square and mark it](#the-rovio-can-find-the-biggest-pink-square-and-mark-it)
+      - [The rovio can track object that you boxed out](#The-rovio-can-track-object-that-you-boxed-out)
 - [How to run a demo](#how-to-run-a-demo)
 - [For more information](#for-more-information)
 
@@ -68,10 +70,10 @@ Before you use the driver, you need to install some dependencies.
 ### The camera capture an image and save it
 >The demo is to capture image and show it in the screen, then save it in a folder that you can define in saveImage member functiion.
 
-### The rovio can find the biggest pink square and mark it.
+### The rovio can find the biggest pink square and mark it
 >The demo you can see [http://v.youku.com/v_show/id_XMTMxMjAwNTMzMg==.html?from=y1.7-1.2&qq-pf-to=pcqq.c2c](http://v.youku.com/v_show/id_XMTMxMjAwNTMzMg==.html?from=y1.7-1.2&qq-pf-to=pcqq.c2c)
 
-### The rovio can tracking object that you box out.
+### The rovio can track object that you boxed out
 >The demo use the TLD algrithm, functional but slow, I put the TLD in thirdpart folder.
 
 ## How to run a demo
