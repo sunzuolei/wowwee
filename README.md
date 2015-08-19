@@ -35,9 +35,9 @@ Before you use the driver, you need to install some dependencies.
 > sudo apt-get install cmake
 
 ### Opencv
-``
+```
 >sudo apt-get install libopencv-dev
-``
+```
 ###libjpeg
 
 >sudo apt-cache search libjpeg
@@ -101,12 +101,14 @@ First you should connect to the Rovio's network, you could use the adhoc model o
 
 >./run_tld -p ../thirdpart/TLD/parameters.yml -tl
 
-## Reference
+## References
 -------------------
-Thanks to the Rovio API provided by University of Pittsburgh, the website is here: [http://kujo.cs.pitt.edu/cs1567/index.php/CPP_API](http://kujo.cs.pitt.edu/cs1567/index.php/CPP_API)
-Thanks to the TLD algrithm, the official version is working in Matlab, but alantrrs write it with C++, you can check on here: [https://github.com/alantrrs/OpenTLD](https://github.com/alantrrs/OpenTLD)
+This work would be impossible without the excellent open source project:
+* [Rovio WowWee driver API from University of Pittsburgh](http://kujo.cs.pitt.edu/cs1567/index.php/CPP_API)
+* [The award-winning, real-time Algorithm Tacking-Learning-Detection (TLD), which is built in Matlab] initially(http://personal.ee.surrey.ac.uk/Personal/Z.Kalal/tld.html), the famous [paper](http://kahlan.eps.surrey.ac.uk/featurespace/tld/Publications/2011_tpami)  can help you to understand details.   
+* [The C++ version of TLD](https://github.com/alantrrs/OpenTLD) modified by Alantrrs
 
-## Contributors
+## Contributor
 -------------------
 - 张子洋: [zzy@mpig.com.cn](zzy@mpig.com.cn)
 
