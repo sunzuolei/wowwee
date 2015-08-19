@@ -35,8 +35,9 @@ Before you use the driver, you need to install some dependencies.
 > sudo apt-get install cmake
 
 ### Opencv
+``
 >sudo apt-get install libopencv-dev
-
+``
 ###libjpeg
 
 >sudo apt-cache search libjpeg
@@ -105,12 +106,12 @@ First you should connect to the Rovio's network, you could use the adhoc model o
 Thanks to the Rovio API provided by University of Pittsburgh, the website is here: [http://kujo.cs.pitt.edu/cs1567/index.php/CPP_API](http://kujo.cs.pitt.edu/cs1567/index.php/CPP_API)
 Thanks to the TLD algrithm, the official version is working in Matlab, but alantrrs write it with C++, you can check on here: [https://github.com/alantrrs/OpenTLD](https://github.com/alantrrs/OpenTLD)
 
-## For more information
+## Contributors
 -------------------
-- E-mail:[szl@mpig.com.cn](szl@mpig.com.cn)
+- 张子洋: [zzy@mpig.com.cn](zzy@mpig.com.cn)
 
 ---------
-Thank you!
+Cheers!
 :panda_face:
 
 
