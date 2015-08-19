@@ -8,9 +8,6 @@ The driver is developed under **Ubuntu 14.04**, but it should work with all the 
 ## Table of Contents 
 -------------------
 - [Dependencies](#library-dependencies)
-      - [Cmake](#cmake)
-      - [Opencv](#opencv)
-      - [libjpeg](#libjpeg)
 - [Demo](#demo)
       - [The Obstacle Avoiding](#the-obstacle-avoiding)
       - [The camera capture an image](#the-camera-capture-an-image)
@@ -21,37 +18,28 @@ The driver is developed under **Ubuntu 14.04**, but it should work with all the 
 
 ## Dependencies
 ----------------------
-The building will fail if the required third part libraries are not available on your machine. Please run the following command to install them by apt-get: 
+The building will fail if the required third part libraries are not available on your machine. Please run the following command to install CMake, OpenCV, libjpeg by apt-get: 
 
-### CMake 
 ```
-sudo apt-get install cmake
+sudo apt-get install cmake libopencv-dev libjpeg
 ```
-### Opencv
-```
-sudo apt-get install libopencv-dev
-```
-###libjpeg
-```
-sudo apt-get install libjpeg
-```
-## Demo
+## Demos
 -------------------
-### The Obstacle Avoiding
->The demo is to test the IR function. If there is obstacle in front of the Rovio, it will turn left. And it will go forward if there is no obstacle. 
+### Obstacle Avoiding
+>The demo is to test the IR function. If there is obstacle in front of the Rovio, it will turn left, otherwise, it will go forward. Please watch the online [video](http://v.youku.com/v_show/id_XODE5MjYyMTQw.html).
 
 ### The camera capture an image and save it
 >The demo is to capture image and show it in the screen, then save it in a folder that you can define in saveImage member functiion.
 
 ### The rovio can find the biggest pink square and mark it
->The demo you can see [http://v.youku.com/v_show/id_XMTMxMjAwNTMzMg==.html?from=y1.7-1.2&qq-pf-to=pcqq.c2c](http://v.youku.com/v_show/id_XMTMxMjAwNTMzMg==.html?from=y1.7-1.2&qq-pf-to=pcqq.c2c)
+>Please watch the online [video](http://v.youku.com/v_show/id_XMTMxMjAwNTMzMg==.html?from=y1.7-1.2&qq-pf-to=pcqq.c2c)
 
 ### The rovio can track the object that you boxed out
 >The demo use the TLD algrithm, functional but slow, I put the TLD in thirdpart folder.
 
 ## How to run a demo
 -------------------
-First you should connect to the Rovio's network, you could use the adhoc model or local lan network, I test the driver with the adhoc model, just  connect to the Wifi(SSID:ROVIO_WOWWEE)
+First you should connect to the Rovio's network, you could use the adhoc model or local lan network, I test the driver with the adhoc model, just  connect to the WiFi (SSID:ROVIO_WOWWEE)
 ```
 cd Wowwee
 mkdir build
