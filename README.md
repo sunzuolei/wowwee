@@ -7,62 +7,34 @@ The driver is developed under **Ubuntu 14.04**, but it should work with all the 
 
 ## Table of Contents 
 -------------------
-- [Library Dependencies](#library-dependencies)
+- [Dependencies](#library-dependencies)
       - [Cmake](#cmake)
       - [Opencv](#opencv)
       - [libjpeg](#libjpeg)
-- [The member function](#the-member-function)
-      - [configuration](#configuration)
-      - [mobility control](#mobility-control)
-      - [infrared](#infrared)
-      - [camera](#camera)
-      - [LED](#led)
-      - [sensor data](#sensor-data)
 - [Demo](#demo)
       - [The Obstacle Avoiding](#the-obstacle-avoiding)
       - [The camera capture an image](#the-camera-capture-an-image)
       - [The rovio can find the biggest pink square and mark it](#the-rovio-can-find-the-biggest-pink-square-and-mark-it)
       - [The rovio can track the object that you boxed out](#the-rovio-can-track-the-object-that-you-boxed-out)
 - [How to run a demo](#how-to-run-a-demo)
-- [For more information](#for-more-information)
+- [Contributor](#Contributor)
 
-## Library Dependencies
+## Dependencies
 ----------------------
+The building will fail if the required third part libraries are not available on your machine. Please run the following command to install them by apt-get: 
 
-Before you use the driver, you need to install some dependencies.
-
-### Cmake 
-> sudo apt-get install cmake
-
+### CMake 
+```
+sudo apt-get install cmake
+```
 ### Opencv
 ```
->sudo apt-get install libopencv-dev
+sudo apt-get install libopencv-dev
 ```
 ###libjpeg
-
->sudo apt-cache search libjpeg
-
->sudo apt-get install libjpeg
-
-
-
-
-## The member function 
--------------------
-
-### configuration
-
-### mobility control
-
-### infrared
-
-### camera
-
-### LED
-
-### sensor data
-
-
+```
+sudo apt-get install libjpeg
+```
 ## Demo
 -------------------
 ### The Obstacle Avoiding
@@ -80,32 +52,23 @@ Before you use the driver, you need to install some dependencies.
 ## How to run a demo
 -------------------
 First you should connect to the Rovio's network, you could use the adhoc model or local lan network, I test the driver with the adhoc model, just  connect to the Wifi(SSID:ROVIO_WOWWEE)
-
->cd Wowwee
-
->mkdir build
-
->cd build
-
->cmake ..
-
->make
-
->cd ../demo_run
-
->./obstacleavoidance
-
->./findpinksquare
-
->./saveimage
-
->./run_tld -p ../thirdpart/TLD/parameters.yml -tl
-
+```
+cd Wowwee
+mkdir build
+cd build
+cmake ..
+make
+cd ../demo_run
+./obstacleavoidance
+./findpinksquare
+./saveimage
+./run_tld -p ../thirdpart/TLD/parameters.yml -tl
+```
 ## References
 -------------------
-This work would be impossible without the excellent open source project:
-* [Rovio WowWee driver API from University of Pittsburgh](http://kujo.cs.pitt.edu/cs1567/index.php/CPP_API)
-* [The award-winning, real-time Algorithm Tacking-Learning-Detection (TLD), which is built in Matlab] initially(http://personal.ee.surrey.ac.uk/Personal/Z.Kalal/tld.html), the famous [paper](http://kahlan.eps.surrey.ac.uk/featurespace/tld/Publications/2011_tpami)  can help you to understand details.   
+This work would be impossible without the excellent open source projects:
+* [Rovio WowWee driver API](http://kujo.cs.pitt.edu/cs1567/index.php/CPP_API) from University of Pittsburgh
+* [The award-winning, real-time Algorithm Tacking-Learning-Detection (TLD)](http://personal.ee.surrey.ac.uk/Personal/Z.Kalal/tld.html), which is built in Matlab initially, the famous [paper](http://kahlan.eps.surrey.ac.uk/featurespace/tld/Publications/2011_tpami) can help you to understand details.   
 * [The C++ version of TLD](https://github.com/alantrrs/OpenTLD) modified by Alantrrs
 
 ## Contributor
