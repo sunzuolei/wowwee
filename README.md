@@ -1,4 +1,4 @@
-# The driver and field test demos for Rovio Wowwee
+﻿# The driver and field test demos for Rovio Wowwee
 `Cmake` `C++` `driver` `Linux`
 
 ![Alt text](./driver/Rovio Wowwee.jpg)
@@ -9,8 +9,8 @@ The driver is developed under **Ubuntu 14.04**, but it should work with all the 
 -------------------
 - [Dependencies](#library-dependencies)
 - [Demo](#demo)
-      - [The Obstacle Avoiding](#the-obstacle-avoiding)
-      - [The camera capture an image](#the-camera-capture-an-image)
+      - [Obstacle Avoiding](#obstacle-avoiding)
+      - [The camera capture an image and save it](#the-camera-capture-an-image-and-save-it)
       - [The rovio can find the biggest pink square and mark it](#the-rovio-can-find-the-biggest-pink-square-and-mark-it)
       - [The rovio can track the object that you boxed out](#the-rovio-can-track-the-object-that-you-boxed-out)
 - [How to run a demo](#how-to-run-a-demo)
